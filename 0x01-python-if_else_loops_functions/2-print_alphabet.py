@@ -1,4 +1,3 @@
 #!/usr/bin/python3
-import string
-tolower = string.ascii_lowercase[:26]
-print({}.format(tolower))
+for i in range(97, 123):
+    print("{}".format(chr(i)), end="")
