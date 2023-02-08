@@ -1,9 +1,17 @@
 #!/usr/bin/python3
-"""write to a file
+"""number_of_lines
 """
-def write_file(filename="", text=""):
+
+
+def number_of_lines(filename=""):
+    """Takes in str filename to read the number of lines
     """
-        using the write_file
-    """
-    with open(filename, encoding = "utf-8") as writeFile:
-        print(writeFile.write(), end="")
+
+    with open(filename, encoding="utf-8") as readFile:
+        lines = 0
+        while True:
+            line = readFile.readline()
+            if not line:
+                break
+            lines += 1
+        return lines
