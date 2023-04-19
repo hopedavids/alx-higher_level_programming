@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" This script lists all states from the database hbtn_0e_0_usa"""
+""" This script lists all states from
+    the database hbtn_0e_0_usa
+"""
 import MySQLdb as mydb
 import sys
-
-
 
 def hbtn_Connect():
     db = mydb.connect(host='localhost', port=3306, user=sys.argv[1], passwd=sys.argv[2], db=sys.argv[3])
@@ -18,7 +18,7 @@ def hbtn_Connect():
     #print  each city in the state rows
     for row in rows:
         print(row)
-    
+
 
     cursor.close()
     db.close()
