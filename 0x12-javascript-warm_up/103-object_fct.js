@@ -1,21 +1,17 @@
 #!/usr/bin/node
+let myObject = {
+  type: 'object',
+  value: 12
+};
+console.log(myObject);
 
-function main() {
-    let integer = 0;
+myObject.incr = function () {
+  this.value++;
+};
 
-    function incr() {
-    integer++;
-    }
-
-    console.log('The integer value is: ' + integer);
-
-    incr();
-    console.log('The integer value is now: ' + integer);
-
-    incr();
-    console.log('The integer value is now: ' + integer);
-
-}
-
-main();
-  
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
+myObject.incr();
+console.log(myObject);
