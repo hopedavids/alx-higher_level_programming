@@ -1,2 +1,1 @@
-# alx-higher_level_programming
-ALX High Level Programming
+# All High level language projects are found here!
